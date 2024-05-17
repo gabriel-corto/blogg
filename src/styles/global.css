@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light {
+  --green-600: #06975d;
+  --green-500: #0ca86a;
+  --red: #dc143c;
+  --white:#fff;
+  --separator: #e1e1f9;
+  --theme: #fff;
+  --dark-weight: #000;
+  --base-text: #334;
+
+  --base-card: #fff;
+  --base-shadow: #a8a8e2;
+  --textArea-border: #d4d4d4;
+  --textArea-background: #fff;
+  --comment-card: #fff;
+
+  --font-title: 'Madimi One';
+  --font-normal: 'Inter';
+}
+
+.dark {
+  --green-600: #06975d;
+  --green-500: #0ca86a;
+  --gray: #f1f1f1;
+  --separator: #3f3f3f;
+  --white:#fff;
+  --red: #dc143c; 
+  --theme: #121214;
+  --dark-weight: #06975d;
+  --base-text: #fff;
+  --comment-card: #212121;
+
+  --base-card: #333;
+  --base-shadow: unset;
+  --textArea-border: transparent;
+  --textArea-background: #121214;
+
+  --font-title: 'Madimi One';
+  --font-normal: 'Inter';
+}
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--theme);
+}

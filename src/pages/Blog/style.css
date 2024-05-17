@@ -1,0 +1,52 @@
+
+.bloggs .blogg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bloggs {
+  padding: 2rem;
+  font-size: .9rem;
+}
+.bloggs .blogg {
+  padding: 1rem;
+  border-bottom: 2px solid var(--separator);
+}
+.bloggs .blogg-header .avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
+  outline: 2px solid var(--green-600);
+}
+.bloggs .blogg-header .blogg-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bloggs .blogg-header .blogg-user-info p{
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  color: var(--gray);
+}
+.bloggs .blogg-content {
+  margin-top: 1rem;
+  color: var(--base-text);
+}
+.bloggs .blogg-content strong {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.bloggs .DatePusblish {
+  color: var(--base-text);
+}
+.bloggs .blogg-content .links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+} 
+.bloggs .blogg-content .links a{
+  color: var(--green-600);
+  text-decoration: underline;
+  font-weight: bold;
+} 

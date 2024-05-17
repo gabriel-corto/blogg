@@ -1,0 +1,76 @@
+.layout {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+  grid-template-rows: 100px 1fr;
+  font-family: var(--font-normal);
+} 
+.layout-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+}
+.layout .sidebar, .bloggs {
+  height: fit-content;
+  border-radius: 8px;
+  background: var(--base-card);
+  box-shadow: 0px 2px 8px var(--base-shadow);
+}
+.bloggs .form-create-comment {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bloggs .form-create-comment p {
+  font-weight: bold;
+  color: var(--base-text);
+  margin-bottom: 9px;
+}
+.bloggs .form-create-comment textarea{
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+  font-family: 'Inter';
+  color: var(--base-text);
+  border: 2px solid var(--textArea-border);
+  background: var(--textArea-background);
+  border-radius: 6px;
+  outline: none;
+  height: 4rem;
+}
+.bloggs .form-create-comment textarea:focus {
+  border: 2px solid var(--green-600);
+  outline: none;
+}
+.bloggs .form-create-comment button {
+  margin-top: .5rem;
+  width: fit-content;
+  background: var(--green-600);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: none;
+  font-family: var(--font-normal);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+  opacity: .5;
+  cursor: not-allowed;
+}
+.bloggs .form-create-comment button:not(:disabled):hover {
+  cursor: pointer;
+  background: var(--green-500);
+}
+.bloggs .form-create-comment button:enabled {
+  opacity: 1;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .layout-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
